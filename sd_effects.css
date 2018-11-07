@@ -27,26 +27,56 @@ html {
 /* Body Styles */
 body {
     background-image: url(sd_back2.png);
+    /* What this line of code does is it puts a transparent image to the background of the body of the webpage. */
+
     background: radial-gradient(circle closest-corner at 40% 70%, white 15%, rgba(151, 151, 151, 0.5) 50%),
-        radial-gradient(closest-corner at 80% 40%, white 15%, rgba(0, 0, 0, 0) 30%),
+        radial-gradient(circle closest-corner at 80% 40%, white 15%, rgba(0, 0, 0, 0) 30%),
         radial-gradient(closest-side at 10% 20%, white 20%, rgba(0, 0, 0, 0) 45%),
         radial-gradient(5% 5% at 90% 10%, white 15%, rgba(0, 0, 0, 0) 40%);
-    background-color: rgb(151, 151, 151);
+    /* These lines of code put white circle around the body of the webpage. */
+
+    background-color: rgb(151, 151, 151, 0.7);
+    /* This line of code make the background color of the body a greyish color. */
+
+    box-shadow: 30px 0px 45px rgb(31, 31, 31), -30px 0px 45px rgb(31, 31, 31);
+    /* What this line of code does is make a shadow on the left and right side of the body of the webpage. */
 }
 
-
-
-
-
-
 /* Navigation List Styles */
+body>header a {
+    border-width: 5px;
+    border-style: outset;
+    border-color: rgb(211, 211, 255);
+}
+
+/* What these lines of code do is it make a grey border that is 5px in width around the hyperlinks.*/
 
 
 
 
 /* Section Left Styles */
+section#left article h1 {
+    color: rgb(211, 211, 211);
+    text-shadow: black 0px 0px 5px;
 
+    /* What these lines of code do is make the title of the body paragraph have a text shadow and changes it color to a grey color.  */
+
+}
+
+#mportrait {
+    filter: drop-shadow(-15px 0px 5px rgba(51, 51, 51, 0.9));
+    filter: grayscale(0.7);
+    filter: opacity(0.6);
+    transform: rotateY(180deg);
+}
+
+/* What these lines of code do is make the portrait rotate 180deg on the y axis and also put a filter on the image so now it look more of a grey color. */
 
 
 
 /* Footer Styles */
+footer {
+    border-top: 2px solid rgb(171, 171, 171);
+}
+
+/* What this line of code does is add a 2px grey border around the footer of the webpage.  */
